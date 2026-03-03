@@ -1,0 +1,10 @@
+# Compiled binary
+viewer
+backup/agent_images/viewer
+
+# Runtime state (keep directory structure)
+state/*
+!state/.gitkeep
+
+# PID files
+*.pid

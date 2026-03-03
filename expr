@@ -1,0 +1,23 @@
+#!/bin/bash
+# Claude Expression Helper — set agent expression and speech bubble
+# Usage: expr <agent> <expression> [speech]
+#   ./expr myagent proud "Task complete."
+#   ./expr myagent normal          ← expression only, clears speech
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+AGENT="$1"
+EXPRESSION="$2"
+SPEECH="${3:-}"
+
+if [ -z "$AGENT" ] || [ -z "$EXPRESSION" ]; then
+    echo "Usage: expr <agent> <expression> [speech]"
+    exit 1
+fi
+
+echo -n "$EXPRESSION" > "$SCRIPT_DIR/state/${AGENT}_expression"
+
+if [ -n "$SPEECH" ]; then
+    echo -n "$SPEECH" > "$SCRIPT_DIR/state/${AGENT}_speech"
+else
+    echo -n "" > "$SCRIPT_DIR/state/${AGENT}_speech"
+fi
