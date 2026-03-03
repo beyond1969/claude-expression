@@ -14,9 +14,8 @@ The agent handles everything automatically — starting/stopping the viewer, cha
 
 ## Installation
 
-Copy the directory to your preferred location and set executable permissions.
-
 ```bash
+git clone https://github.com/beyond1969/claude-expression.git
 cd claude-expression
 chmod +x expr start.sh stop.sh
 ```

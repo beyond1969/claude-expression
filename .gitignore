@@ -1,6 +1,8 @@
 # Compiled binary
 viewer
-backup/agent_images/viewer
+
+# Internal backup (not for distribution)
+backup/
 
 # Runtime state (keep directory structure)
 state/*

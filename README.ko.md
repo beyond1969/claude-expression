@@ -14,9 +14,8 @@ Claude Code 에이전트의 표정과 말풍선을 화면에 띄워주는 macOS 
 
 ## 설치
 
-원하는 위치에 디렉토리를 복사하고 실행 권한을 부여합니다.
-
 ```bash
+git clone https://github.com/beyond1969/claude-expression.git
 cd claude-expression
 chmod +x expr start.sh stop.sh
 ```
