@@ -4,6 +4,8 @@ A self-contained macOS floating window that displays agent expressions and speec
 
 The agent handles everything automatically — starting/stopping the viewer, changing expressions, and displaying speech bubbles. All you need to do is **initial setup**.
 
+![Example](example.png)
+
 ## Requirements
 
 - macOS
